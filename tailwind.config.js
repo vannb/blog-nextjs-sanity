@@ -8,6 +8,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true, // center the container
+        screens: {
+          sm: '100%', // full width on small screens
+          md: '100%', // full width on medium screens
+          lg: '1024px', // max-width for large screens
+          xl: '1280px', // max-width for extra large screens
+        },
+      },
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
@@ -38,5 +47,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/typography'), // Ensure you have this plugin for extended typography
+  ],
 }
